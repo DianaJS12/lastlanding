@@ -1,0 +1,170 @@
+body{
+    margin: 0;
+}
+.center_header{
+    background: rgba(0,0,0,0.9);
+}
+.inline_header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.inline_header ul{
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    padding: 15px 0;
+}
+.inline_header .list{
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+}
+.list li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.logo li a{
+    color: gold;
+    font-size: 25px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.list li{
+    position: relative;
+}
+.list li::before{
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 2px;
+    right: 0;
+    bottom: 0;
+    background: gold;
+    transition: 1s;
+}
+.list li:hover:before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background: gold;
+}
+.search li input{
+    border: 0;
+    outline: 0;
+    padding: 8px 20px;
+    border-radius: 30px;
+    position: relative;
+}
+.search li{
+    position: relative;
+}
+.search li i{
+    position: absolute;
+    right: 5px;
+    top: 8px;
+    color: gold;
+    font-size: 20px;
+}
+.toggle_icon li a i{
+    font-size: 20px;
+    color: white;
+   
+}
+.toggle_icon{
+    display: none;
+}
+
+
+/* SLIDER_PARENT */
+.slider_parent{
+    position: relative;
+    height: 100%;
+}
+.swiper-container {
+    width: 100%;
+    height: 100vh;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    height: 100vh !important;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+
+
+.one{
+    background: url("https://i.pinimg.com/originals/6e/73/61/6e7361d4b2aa4fb2a5969516eb6e10e7.jpg") center / cover;
+}
+.two{
+    background: url("https://i.pinimg.com/originals/64/62/eb/6462eb73861571050217556cb2af5fa7.jpg") center  /cover;
+}
+.three{
+    background: url("https://i.pinimg.com/originals/c5/5e/6d/c55e6d7dedf9bc55f5d231137c4f3b18.jpg") center / cover;
+}
+.four{
+    background: url("https://i.redd.it/pn6xza6jyip41.jpg") center / cover;
+}
+.five{
+    background: url("https://lucabuzas.com/wp-content/uploads/2020/04/Los-Angeles-Personal-Stylist-Nike-Personal-Styling-Experience.jpg") center / cover;
+}
+.six{
+    background: url("https://images.unsplash.com/photo-1523595857-fe9ee689f76f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80") center / cover;
+}
+.seven{
+    background: url("https://wallpaperaccess.com/full/1685030.jpg") center / cover;
+}
+.eight{
+    background: url("https://www.wallpaperbetter.com/wallpaper/1005/482/462/sunset-palm-trees-silhouette-hd-1080P-wallpaper.jpg") center / cover;
+}
+.nine{
+    background: url("https://cdn.wallpapersafari.com/21/72/efXtCg.jpg") center / cover;
+}
+.ten{
+   background: url("https://images.barrons.com/im-76328?width=1280&size=1.33333333") center / cover; 
+}
+
+.title h1{
+    font-size: 70px;
+    letter-spacing: 7px;
+    color: white;
+    text-shadow: 0 0 20px white;
+}
+
+@media(max-width:670px){
+    .list{
+        display: none !important;
+    }
+    .toggle_icon{
+        display: block;
+    }
+}
+@media(max-width:450px){
+    .title h1{
+        font-size: 40px;
+    }
+}
+@media(max-width:350px){
+    .search{
+        display: none;
+    }
+}
